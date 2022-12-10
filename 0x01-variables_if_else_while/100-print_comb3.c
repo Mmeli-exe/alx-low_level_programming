@@ -16,7 +16,7 @@ int main(void)
 		{
 			putchar(tens + 48);
 			putchar(units + 48);
-			if (units < 9 && tens < 8)
+			if (units != 9 && tens != 8)
 			{
 				putchar(44);
 				putchar(32);
