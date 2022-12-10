@@ -16,6 +16,7 @@ int main(void)
 		{
 			for (units = tens + 1; units < 10; units++)
 			{
+				putchar(hunds + 48);
 				putchar(tens + 48);
 				putchar(units + 48);
 				if (units != 9 || tens != 8 || hunds != 7)
