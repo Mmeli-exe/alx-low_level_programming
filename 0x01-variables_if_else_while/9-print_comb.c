@@ -14,8 +14,8 @@ int main(void)
 		putchar(num + 48);
 		if (num < 9)
 		{
-			putchar(",");
-			putchar(" ");
+			putchar(44);
+			putchar(32);
 		}
 	}
 	putchar("\n");
