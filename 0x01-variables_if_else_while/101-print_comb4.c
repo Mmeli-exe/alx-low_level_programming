@@ -10,7 +10,7 @@ int main(void)
 	int hunds;
 	int tens;
 	int units;
-	
+
 	for (hunds = 0; hunds < 10; hunds++)
 	{
 		for (tens = hunds + 1; tens < 10; tens++)
