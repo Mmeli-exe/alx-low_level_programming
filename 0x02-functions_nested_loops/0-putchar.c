@@ -20,4 +20,5 @@ void print_putchar(void)
 
 	for (ltr = 0; ltr < 8; ltr++)
 		_putchar(str[ltr]);
+	_putchar('\n');
 }
