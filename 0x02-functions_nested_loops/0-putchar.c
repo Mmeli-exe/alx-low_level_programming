@@ -1,17 +1,21 @@
 #include "main.h"
 
 /**
- * print_putchar - prints the string"_putchar"
  * main - call print_putchar
- *
  * Return: 0 always success
  */
 
-int main()
+int main(void)
 {
 	print_putchar();
 	return (0);
 }
+
+/**
+ * print_putchar - pritn string "-putchar"
+ *
+ * Return: nothing
+ */
 
 void print_putchar(void)
 {
