@@ -2,14 +2,17 @@
 
 /**
  * print_putchar - prints the string"_putchar"
+ * main - call print_putchar
+ *
  * Return: 0 always success
  */
 
 int main()
 {
 	print_putchar();
-	return (0)
+	return (0);
 }
+
 void print_putchar(void)
 {
 	int ltr;
