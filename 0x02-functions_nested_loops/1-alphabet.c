@@ -1,16 +1,24 @@
 #include "main.h"
 
 /**
- * print_alphabet - prints lowercase letters
+ * times_table - prints lowercase letters
  * Return: nothing
  */
 
-void print_alphabet(void)
+void times_table(void)
 {
-	int ltr;
+	int r;
+	int c;
 
-	for (ltr = 0; ltr < 26; ltr++)
-		_putchar(ltr + 97);
-	_putchar('\n');
+	for (r = 0; r < 10; r++)
+	{
+		for (c = 0; c < 10; c++)
+		{
+			_putchar((r*c) + 48);
+			if (c !=9)
+				_putchar(', ');
+		}
+		_putchar('\n');
+	}
 }
 
