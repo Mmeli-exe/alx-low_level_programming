@@ -17,7 +17,7 @@ void print_to_98(int n)
 			if (n > 9)
 			{
 				_putchar((n / 10) + 48);
-				_putchat((n % 10) + 48);
+				_putchar((n % 10) + 48);
 			}
 			else
 			{
