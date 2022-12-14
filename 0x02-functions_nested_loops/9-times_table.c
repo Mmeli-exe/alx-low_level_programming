@@ -16,12 +16,19 @@ void times_table(void)
 		for (c = 0; c < 10; c++)
 		{
 			p = r * c;
-			if (p < 10)
+			if (p == 0)
 			{
-				_putchar((r * c) + 48);
+				_putchar(p + 48);
+			}
+			else if (p < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				-putchar(p + 48);
 			}
 			else
 			{
+				putchar(' ');
 				_putchar((p / 10) + 48);
 				_putchar((p % 10) + 48);
 			}
