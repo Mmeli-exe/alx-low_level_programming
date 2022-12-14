@@ -23,12 +23,10 @@ void times_table(void)
 			else if (p < 10)
 			{
 				_putchar(' ');
-				_putchar(' ');
 				_putchar(p + 48);
 			}
 			else
 			{
-				_putchar(' ');
 				_putchar((p / 10) + 48);
 				_putchar((p % 10) + 48);
 			}
