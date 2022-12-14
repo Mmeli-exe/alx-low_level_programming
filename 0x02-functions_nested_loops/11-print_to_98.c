@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - counts from a given number to 98
@@ -12,41 +13,22 @@ void print_to_98(int n)
 {
 	if (n < 98)
 	{
-		for (;n < 99; n++)
+		for (; n < 99; n++)
 		{
-			if (n > 9)
-			{
-				_putchar((n / 10) + 48);
-				_putchar((n % 10) + 48);
-			}
-			else
-			{
-				_putchar(n + 48);
-			}
+			printf("%d", n);
 			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				printf(", ");
 		}
 	}
 	else if (n > 98)
 	{
-		for (;n > 97; n--)
+		for (; n > 97; n--)
 		{
-			_putchar((n / 10) + 48);
-			_putchar((n % 10) + 48);
+			printf("%d", n)
 			if (n != 98)
-			{
-				_putchar(',');
-				_putchar(' ');
-			}
+				printf(", ");
 		}
 	}
 	else
-	{
-		_putchar('9');
-		_putchar('8');
-	}
-	_putchar('\n');
+		printf("%d", n);
 }
