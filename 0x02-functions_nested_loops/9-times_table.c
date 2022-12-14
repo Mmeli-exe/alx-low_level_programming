@@ -16,7 +16,10 @@ void times_table(void)
 		{
 			_putchar((r*c) + 48);
 			if (c !=9)
-				_putchar(', ');
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
