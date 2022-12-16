@@ -2,7 +2,6 @@
 
 /**
  * main - fizzbuzz test
- * @num: current number
  * Return: Always 0
  */
 
