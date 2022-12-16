@@ -2,7 +2,7 @@
 
 /**
  * main - fizz buzz test
- * @num: current number 
+ * @num: current number
  * Return: Always 0
  */
 
@@ -29,5 +29,6 @@ int main(void)
 		else
 			printf("%d", num);
 	}
+	return (0);
 }
 
