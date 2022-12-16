@@ -6,17 +6,16 @@
  * Return: Always 0
  */
 
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int slsh;
-	int spc
+	int spc;
 
 	for (slsh = 0; slsh < n; slsh++)
 	{
 		for (spc = 0; spc < slsh + 1; spc++)
 			_putchar(' ');
 		_putchar('\\');
+		_putchar('\n';
 	}
-	_putchar('\n');
 }
-
