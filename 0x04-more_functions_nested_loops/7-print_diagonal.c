@@ -16,6 +16,6 @@ void print_diagonal(int n)
 		for (spc = 0; spc < slsh + 1; spc++)
 			_putchar(' ');
 		_putchar('\\');
-		_putchar('\n';
+		_putchar('\n');
 	}
 }
