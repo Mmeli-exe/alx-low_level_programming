@@ -2,10 +2,11 @@
 
 /**
  * main - fizz buzz test
+ * @num: current number 
  * Return: Always 0
  */
 
-void main(void)
+int main(void)
 {
 	int num;
 
@@ -13,19 +14,20 @@ void main(void)
 	{
 		if (num > 1)
 			printf(" ");
-		switch (num)
+		if  (num % 3 == 0 && num % 5 == 0)
 		{
-		case (num % 3 == 0 && num % 5 == 0):
 			printf("FizzBuzz");
-			break;
-		case (num % 3 == 0):
-			printf("Fizz");
-			break;
-		case (num % 5 == 0):
-			printf("Buzz");
-			break;
-		default
-			printf("%d", num);
 		}
+		else if (num % 3 == 0)
+		{
+			printf("Fizz");
+		}
+		else if (num % 5 == 0)
+		{
+			printf("Buzz");
+		}
+		else
+			printf("%d", num);
+	}
 }
 
