@@ -20,6 +20,10 @@ int _atoi(char *s)
 			break;
 		idx++;
 	}
+
+	if (s[idx] == '\0')
+		return (0);
+
 	switch (sign % 2)
 	{
 		case (0):
