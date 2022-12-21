@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
- * print_rev - print string in reverse
- * @s: string to be counted
+ * puts_half - print to be halved
+ * @s: string sourc pointer
  * Return: nothing
  */
 
-void print_rev(char *s)
+void puts_half(char *str)
 {
 	int len;
 	int idx;
-	char *str = s;
 
 	len = 0;
-	while (*str != '\0')
+	while (str[len + 1] != '\0')
 	{
 		len++;
-		str++;
 	}
-	len--;
 	for (idx = (len + 1) / 2; idx < len; idx++)
 	{
-		_putchar(s[idx]);
+		_putchar(str[idx]);
 	}
 	_putchar('\n');
 }
