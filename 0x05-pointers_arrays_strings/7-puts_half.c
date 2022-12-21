@@ -2,7 +2,7 @@
 
 /**
  * puts_half - print to be halved
- * @s: string sourc pointer
+ * @str: string source pointer
  * Return: nothing
  */
 
