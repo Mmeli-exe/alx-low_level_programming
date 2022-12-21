@@ -1,24 +1,25 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse
- * @s: string to be printed
- * Return: Nothing
+ * print_rev - print string in reverse
+ * @s: string to be counted
+ * Return: nothing
  */
 
 void print_rev(char *s)
 {
-	int idx;
+	int len;
+	int idx
 	char *str = s;
 
-	idx = 0;
+	len = 0;
 	while (*str != '\0')
 	{
-		*str++;
-		idx++;
+		len++;
+		str++;
 	}
-	idx--;
-	for  (; idx >= 0; idx--)
+	idx = len - 1;
+	for (; idx > -1; idx--)
 	{
 		_putchar(s[idx]);
 	}
