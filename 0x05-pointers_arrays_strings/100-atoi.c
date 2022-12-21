@@ -20,7 +20,7 @@ int _atoi(char *s)
 			break;
 		idx++;
 	}
-	switch (sign % 2) 
+	switch (sign % 2)
 	{
 		case (0):
 			out = s[idx] - 48;
@@ -29,7 +29,7 @@ int _atoi(char *s)
 			{
 				out *= 10;
 				out += s[idx] - 48;
-				idx++				
+				idx++;
 			}
 			break;
 		case (1):
