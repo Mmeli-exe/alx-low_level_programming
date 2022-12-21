@@ -9,7 +9,7 @@
 void print_rev(char *s)
 {
 	int len;
-	int idx
+	int idx;
 	char *str = s;
 
 	len = 0;
