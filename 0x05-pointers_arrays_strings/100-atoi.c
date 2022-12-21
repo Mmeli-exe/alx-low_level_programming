@@ -19,15 +19,19 @@ int _atoi(char *s)
 			break;
 		if (nz == 0 && s[idx] == '-')
 			sign++;
-		if ('0' <= s[idx] && s[idx] <= '9')
+		if (nz != 0 && '0' <= s[idx] && s[idx] <= '9')
 		{
-			nz++;
 			out *= 10;
 			out += s[idx] - 48;
 		}
+		if (nz == 0 && '0' < s[idx] && s[idx] <= '9')
+		{
+			nz++;
+			out = s[idx] - 48;
+			if (nz % 2 == 1)
+				out *= -1;
+		}
 		idx++;
 	}
-	if (sign % 2 == 1)
-		out *= -1;
 	return (out);
 }
